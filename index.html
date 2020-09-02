@@ -4,9 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>PaginaBootstrap</title>
   </head>
@@ -16,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark openSans">
         <a class="navbar-brand" href="#">La Cavería</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -57,33 +58,33 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img class= "bd-placeholder-img" src="https://travelandleisure.mx/wp-content/uploads/2018/08/vin%CC%83edo.jpg" alt="Viniedo" width="100%" height="700rem">
+            <div class="carousel-item active openSans">
+            <img class= "bd-placeholder-img" src="https://travelandleisure.mx/wp-content/uploads/2018/08/vin%CC%83edo.jpg" alt="Viniedo" width="100%" height="600rem">
               <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Una simple página de vinos.</h1>
+                <div class="carousel-caption text-left center">
+                  <h1>Una simple página de <mark style="background-color: blue; color: white;">Vinos</mark></h1>
                   <p>Nos enfocamos en brindarle el mejor servicio a aquellos clientes que deseen saber sobre este poderoso aperitivo</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  <p><a class="btn btn-lg btn-dark text-white" href="#" role="button">Vea nuestra experiencia</a></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+              <img class= "bd-placeholder-img" src="https://images5.alphacoders.com/443/thumb-1920-443997.jpg" alt="VinoVaso" width="100%" height="600rem">
               <div class="container">
                 <div class="carousel-caption">
                   <h1>Another example headline.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  <p><a class="btn btn-lg btn-warning" href="#" role="button">Learn more</a></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+              <img class= "bd-placeholder-img" src="https://s2.best-wallpaper.net/wallpaper/3840x2160/1610/Black-grapes-wine-bottle-leaves-wood-bucket_3840x2160.jpg" alt="VinoVaso" width="100%" height="600rem">
               <div class="container">
                 <div class="carousel-caption text-right">
                   <h1>One more for good measure.</h1>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                  <p><a class="btn btn-lg btn-info" href="#" role="button">Browse gallery</a></p>
                 </div>
               </div>
             </div>
@@ -98,41 +99,64 @@
           </a>
         </div>
         <!--COMIENZAN LAS CARTAS DE LOS VINOS-->
-        <div class="container">
-            <h2>Vinos</h2>
-            <div class="card-deck">
-                <div class="card">
-                <img src="https://argentinewines.com/wp-content/uploads/2017/05/FCBarcelona-CS.png" class="card-img-top" alt="..." width="50">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                </div>
-                <div class="card">
-                <img src="https://argentinewines.com/wp-content/uploads/2017/05/FCBarcelona-CS.png" class="card-img-top" alt="..." width="50">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                </div>
-                <div class="card">
-                <img src="https://argentinewines.com/wp-content/uploads/2017/05/FCBarcelona-CS.png" class="card-img-top" alt="..." width="50">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                </div>
-            </div>
-        </div>
+        <section id="Vinos">
+          <div class="container openSans">
+            <br>
+              <h2 class="text-center">Vinos</h2>
+              <hr class="hr-decoration">
+              <br>
+              <div class="card-deck">
+                  <div class="card">
+                  <img src="https://argentinewines.com/wp-content/uploads/2017/05/FCBarcelona-CS.png" class="bd-placeholder-img" alt="..." width="150">
+                  <div class="card-body">
+                      <h5 class="card-title">Vino Barcelona FC</h5>
+                      <p class="card-text">Este vino azulgrana es elaborado por bodega Estancia Mendoza en el 2014.</p>
+                  </div>
+                  </div>
+                  <div class="card">
+                  <img src="https://argentinewines.com/wp-content/uploads/2017/05/FCBarcelona-CS.png" class="bd-placeholder-img fa-align-center" alt="..." width="150">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+                  <div class="card">
+                  <img src="https://argentinewines.com/wp-content/uploads/2017/05/FCBarcelona-CS.png" class="bd-placeholder-img" alt="..." width="150">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </section>
         <!--COMIENZA EL CONTENEDOR DEL VIDEO-->
-        <div class="container">
+        <section id="Video">
+        <div class="container-fluid openSans bg-image">
+        <div class="container text-center">
+          <br>
             <h4>Observe como se hace un vino</h4>
-            <div class="contenedor-videos">
+            <br>
+            <div class="col align-self-center text-center">
                 <iframe src="https://www.youtube.com/embed/5o5RnrcdEcg" frameborder="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="600" height="300"></iframe>
             </div>
         </div>
+      </div>
+    </section>
+      <section id="Adivinanza">
+        <div class="container openSans">
+          <br><br><br>
+          <h1 class="text-center"><mark style="background-color: yellow;">Una Adivinanza!</mark></h1>
+          <br><br>
+          <div class="card bg-dark text-black">
+            <img src="https://raizdeguzman.com/blog/wp-content/uploads/2017/06/fermentacion-vino.jpg" alt="Bodega" class="card-img">
+            <div class="card-img-overlay">
+            <h5>¿Cuánto tiempo aproximadamente tarda en fermentarse un vino?</h5>
+          </div>
+          </div>
+        </div>
+      </section>
   </body>
 </html>
