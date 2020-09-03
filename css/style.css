@@ -8,3 +8,78 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.contenedor-principal{
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(249, 249, 249);
+}
+.contenedor-formulario {
+    position: relative;
+    left: 15rem;
+    margin: 5rem -5px 0 5rem;
+}
+  
+  /* Clear floats after the columns */
+.contenedor-formulario:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  textarea{
+    margin-top: 2rem;
+    position: relative;
+    width: 43rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+}
+textarea:focus {
+    width: 43rem;
+  }
+  input[type=text], select {
+    position: relative;
+    width: 10rem;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+  }
+  input[type=mail], select {
+    position: relative;
+    width: 10rem;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+  }
+  input[type=text]:focus {
+    width: 15rem;
+  }
+  input[type=mail]:focus {
+    width: 15rem;
+  }
+label{
+    position: relative;
+    padding: 10px;
+}
+
+.boton-vinos{
+    position: relative;
+    top: 4rem;
+    left: 35rem;
+    border: 0;
+    margin: 0;
+    color: black;
+    height: 3rem;
+    width: 20rem;
+    background: none;
+    border: 3px solid black;
+    border-radius: 5rem;
+    transition: 0.3s;
+    text-decoration:none;
+    padding:20px;
+}
