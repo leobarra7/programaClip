@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    
 
-    <title>PaginaBootstrap</title>
+    <title>La Cavería - Vinos y más</title>
   </head>
   <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark openSans">
         <a class="navbar-brand" href="#">La Cavería</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,17 +25,16 @@
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vinos</a>
+              <a class="nav-link" href="#Vinos">Vinos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="#Video">Videos</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mas</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#Adivinanza">Adivinanza</a>
+                <a class="dropdown-item" href="contacto.html">Contacto</a>
               </div>
             </li>
           </ul>
@@ -153,64 +149,28 @@
             <img src="https://raizdeguzman.com/blog/wp-content/uploads/2017/06/fermentacion-vino.jpg" alt="Bodega" class="card-img">
             <div class="card-img-overlay">
               <h5><mark class="bg-white text-dark">¿Cuánto tiempo aproximadamente tarda en fermentarse un vino?</mark></h5>
-              <p class="card-text">Selecciona una de las opciones:</p>
+              <p class="card-text">Ingrese el valor: </p>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
-                <label class="form-check-label" for="gridRadios1">
-                  De 2 a 10 semanas.
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                  Entre 8 y 10 años.
-                </label>
-              </div>
-              <div class="form-check disabled">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                <label class="form-check-label" for="gridRadios3">
-                  Entre 8 y 10 días.
-                </label>
+                <input class="form-check-input" type="text" name="textoVino" id="textoVino" value="" >  
               </div>
               <br>
-              <p><a href="" class="btn btn-success">Validar</a></p>
+              <button class="btn btn-success" onclick="validarAdivinanza()" type="button"> Validar</button>
             </div>
           </div>
         </div>
       </section>
-      <section id="Contacto">
-        <div class="contenedor-principal openSans">
-          <br>
-            <h2 class="text-center"><mark style="background-color: red;">Contacto</mark></h2>
-            <div class="contenedor-formulario openSans">
-                <form action="/action_page.php">
-                    <label for="fname">Nombre y Apellido</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Escriba su nombre y apellido...">
-                   
-                    <label for="lname">Email de contacto</label>
-                    <input type="mail" id="lname" name="lastname" placeholder="Ponga su email..">
-                    <br>
-                    <br>
-                    <label for="vinoForm">Vino</label>
-                    <select id="vinoForm" name="vinoForm">
-                      <option value="barcelona">Barcelona FC</option>
-                      <option value="novecento">Novecento</option>
-                      <option value="potrero">Potrero Reserva</option>
-                    </select>
-                    <br>
-                    <textarea name="mensaje" id="solicitud" cols="30" rows="10"></textarea>
-                    <br>
-                    <div class="container">
-                    <button class="boton-vinos">Enviar consulta</button>
-                  </div>
-                  </form>            
-            </div>
-        </div>
-    </section>
       <footer class="footer mt-auto py-3">
         <div class="container">
           <span class="text-muted">2020 © Córdoba, Argentina.</span>
         </div>
+        
       </footer>
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
