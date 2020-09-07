@@ -25,7 +25,7 @@ nav a {
 div h1 {
     position: relative;
     top: 10rem;
-    left: 10rem;
+    left: 2rem;
     border: 0;
     margin: 0;
     font-family: 'Alata', sans-serif;
@@ -56,7 +56,7 @@ h2 {
 .p-inicio{
     position: relative;
     top: 10rem;
-    left: 20rem;
+    left: 10rem;
     border: 0;
     margin: 0;
     font-family: 'Alata', sans-serif;
@@ -66,7 +66,7 @@ h2 {
 .boton-inicio {
     position: relative;
     top: 13rem;
-    left: 35rem;
+    left: 25rem;
     border: 0;
     margin: 0;
     font-family: 'Alata', sans-serif;
@@ -147,4 +147,7 @@ h4{
     font-family: 'Alata', sans-serif;
     font-size: 3rem;
     color: black;
+}
+.table {
+    height: 100%;
 }
