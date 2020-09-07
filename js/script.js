@@ -32,3 +32,8 @@ function validarAdivinanza()
         alert("Perdiste!. La respuesta correcta era: 9 días");
     }
 }
+
+enviarConsulta()
+{
+    alert("Consulta Enviada Correctamente");
+}
